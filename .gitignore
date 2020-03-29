@@ -1,0 +1,5 @@
+database/*
+node_modules/
+
+!*/.gitkeep
+!**/.gitkeep

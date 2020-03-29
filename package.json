@@ -1,0 +1,32 @@
+{
+  "name": "omnistack11-api",
+  "version": "0.0.0",
+  "description": "Omnistack week",
+  "homepage": "https://github.com/felipecwb/omnistack11-api#readme",
+  "main": "index.js",
+  "author": "Felipe Francisco",
+  "license": "UNLICENSED",
+  "scripts": {
+    "production": "node src/index.js",
+    "development": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipecwb/omnistack11-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/felipecwb/omnistack11-api/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "moment": "^2.24.0",
+    "morgan": "^1.10.0",
+    "sqlite3": "^4.1.1",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
