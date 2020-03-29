@@ -19,6 +19,7 @@
     "url": "https://github.com/felipecwb/omnistack11-api/issues"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.20.13",
     "moment": "^2.24.0",

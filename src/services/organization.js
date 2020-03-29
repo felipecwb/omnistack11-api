@@ -8,12 +8,12 @@ async function findAll() {
 }
 
 async function findById(id) {
-  let orgs = await connection(ENTITY).select('*').where('id', id)
-  if (orgs.length < 1) {
+  let [ org ] = await connection(ENTITY).select('*').where('id', id)
+  if (! org) {
     throw new Error('Organization Not Found!')
   }
 
-  return orgs[0]
+  return org
 }
 
 async function create({ name, email, whatsapp, city, uf }) {

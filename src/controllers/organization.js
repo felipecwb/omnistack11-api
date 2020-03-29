@@ -1,4 +1,6 @@
+const router = require('express').Router()
 const organization = require('../services/organization')
+
 
 async function list(request, response) {
   let orgs = await organization.findAll()
@@ -45,8 +47,6 @@ async function exclude(request, response) {
   }
 }
 
-// routes
-const router = require('express').Router()
 
 router.get('/', list)
 router.get('/:id', get)
